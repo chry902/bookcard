@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4f4f4f;
+}
+header{
+  background-color: rgb(240, 240, 240);
+  padding:1rem;
+  text-align: center;
+  font-size: xx-large;
+}
+main{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+
+.card_contain{
+  box-shadow: 5px 5px 10px 2px #333333;
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin: 2rem;
+}
+
+.card{
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgb(240, 240, 240); */
+  
+  
+}
+
+
+.contain_title{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 0 1rem 2rem 1rem;
+  margin-top: -2.5rem;
+}
+
+.card_contain h3{
+  padding: 1.5rem 0;
+}
+.card_contain h3, p{
+  width: 100%;
+} 
+
+.card_contain p{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  
+}
+
+.contain_img{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem ;
+  border-radius: 30px;
+  
+}
+.contain_img img{
+  border-radius: 30px;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  transition: width 3s;
+}
+.contain_img :hover{
+  object-fit: cover;
+  width: 100%;
+  z-index: 3;
+}
+
+.btn-toolset {
+  margin-top: 2rem;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  color: #FFFFFF;
+  text-decoration: none;
+  line-height: 1.2;
+  font-weight: normal;
+  font-family: sans-serif;
+  font-size: 18px;
+  background-color: #007BFF;
+  border-radius: 30px;
+  padding: 10px 10px;
+  border: 1px solid #006FE6;
+  cursor: pointer;
+ }
+ .btn-toolset:hover {
+  background-color: #0063CC;
+  border-color: #0056B3;
+ }
+ .btn-toolset > strong {
+  font-size: 24px;
+ }
